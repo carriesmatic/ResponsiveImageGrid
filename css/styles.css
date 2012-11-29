@@ -40,6 +40,13 @@ header
     height: auto;
     padding: 0px auto;
 }
+.box:hover
+{
+    cursor: pointer;
+    -webkit-box-shadow: 0 5px 15px 0px #888;
+    -mox-box-shadow: 0 5px 15px 0px #888;
+    box-shadow: 0 5px 15px 0px #888;
+}
 .description
 {
     margin: 10px auto 0;

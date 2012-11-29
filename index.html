@@ -7,14 +7,25 @@
         <meta name="viewport" content="width=device-width;initial-scale=1.0">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/basic_ie.css">
+        <link rel="stylesheet" href="css/basic.css">
+        <script type="text/javascript" src='js/jquery.js'></script>
+        <script type='text/javascript' src='js/jquery.simplemodal.js'></script>
+        <script type='text/javascript' src='js/basic.js'></script>
+        <script type="text/javascript" src='js/default.js'></script>
+
+        <!-- IE6 "fix" for the close png image -->
+        <!--[if lt IE 7]>
+            <link type='text/css' href='css/basic_ie.css' rel='stylesheet' media='screen' />
+        <![endif]-->
+
     </head>
     <body>
         <header>
             RESPONSIVE IMAGE GRID
         </header>
         <div id="wrapper">
-            <section class="box">
+            <section class="box basic">
                 <img class="box-image" src="http://wallpapershd.org/nature/beach-scenery/fiji-resort-hd-wallpaper/download/fiji-resort-hd-wallpaper-1152x720.jpg" />
                 <div class="description">
                     FIJI RESORT
@@ -56,6 +67,18 @@
                     HOUSTON, TEXAS
                 </div>
             </section>
-        </div>
+            
+            <!-- modal content -->
+    		<div id="basic-modal-content">
+    			<h3>Basic Modal Dialog</h3>
+    			<p>For this demo, SimpleModal is using this "hidden" data for its content. You can also populate the modal dialog with an AJAX response, standard HTML or DOM element(s).</p>    		
+    		</div>
+    
+    		<!-- preload the images -->
+    		<div style='display:none'>
+    			<img src='img/basic/x.png' alt='' />
+    		</div>
+    
+            </div>
     </body>
 </html>
