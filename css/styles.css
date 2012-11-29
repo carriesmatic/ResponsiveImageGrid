@@ -1,7 +1,5 @@
 body
 {
-    margin: 0;
-    padding: 0;
     font-family: 'Verdana', 'Arial', sans-serif;
     font-size: 1em/1.5em;
 }
@@ -17,15 +15,40 @@ body
         font-size: .7em;
     }
 }
+header
+{
+    font-size: 2.5em;
+    color: #DDD;
+    background-color: #444;
+    padding: 30px 30%;
+    text-align: center;
+}
 #wrapper
 {
-    width: 100%;
+/*     background-color: blue; */
+    width: 90%;
+    padding: 2% auto;
+    margin: auto;
+    text-align: center;
 }
 .box
-{
-    width: 31.25%;
+{   
+    position: relative;
+/*     background-color: red; */
+    display: inline-block;
+    width: 250px;
+    padding: 10px;
+    margin: 20px;
+    -webkit-box-shadow: 0 0 50px 5px #888;
+    vertical-align: middle;
 }
 .box-image
 {
-    width: 90%;
+/*     background-color: yellow; */
+    width: 100%;
+    padding: 0px auto;
+}
+.description
+{
+    margin: 10px auto 0;
 }
