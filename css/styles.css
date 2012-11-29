@@ -1,32 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
 body
 {
-    font-family: 'Verdana', 'Arial', sans-serif;
+    font-family: 'Oswald', 'Verdana', 'Arial', sans-serif;
     font-size: 1em/1.5em;
-}
-@media screen and (max-width:800px)
-{
-    body{
-        font-size: .8em;
-    }
-}
-@media screen and (max-width:400px)
-{
-    body{
-        font-size: .7em;
-    }
 }
 header
 {
     font-size: 2.5em;
-    color: #DDD;
-    background-color: #444;
+    color: #AAA;
     padding: 30px 30%;
     text-align: center;
 }
 #wrapper
 {
 /*     background-color: blue; */
-    width: 90%;
+    width: 1140px;
     padding: 2% auto;
     margin: auto;
     text-align: center;
@@ -36,19 +25,66 @@ header
     position: relative;
 /*     background-color: red; */
     display: inline-block;
-    width: 250px;
+    width: 25%;
     padding: 10px;
     margin: 20px;
-    -webkit-box-shadow: 0 0 50px 5px #888;
+    -webkit-box-shadow: 0 10px 25px 0px #888;
+    -mox-box-shadow: 0 10px 25px 0px #888;
+    box-shadow: 0 10px 25px 0px #888;
     vertical-align: middle;
 }
 .box-image
 {
 /*     background-color: yellow; */
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     padding: 0px auto;
 }
 .description
 {
     margin: 10px auto 0;
+}
+
+@media screen and (max-width:1140px)
+{
+    body{
+        font-size: .9em;
+    }
+    #wrapper
+    {
+        width: 700px;
+    }
+    .box
+    {
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width:800px)
+{
+    body{
+        font-size: .8em;
+    }
+    #wrapper
+    {
+        width: 500px;
+    }
+    .box
+    {
+        width: 80%;
+    }
+}
+@media screen and (max-width:480px)
+{
+    body{
+        font-size: .7em;
+    }
+    #wrapper
+    {
+        width: 400px;
+    }
+    .box
+    {
+        width: 80%;
+    }
 }
